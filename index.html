@@ -91,18 +91,23 @@
         </div>
     </footer>
 <script>
+    // Create an observer to track elements visibility
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
+                // Add animation class when element is visible
                 entry.target.classList.add('show-animation');
             } else {
+                // Remove animation class when scrolling away
                 entry.target.classList.remove('show-animation');
             }
         });
     }, { threshold: 0.1 });
 
-    const animateElements = document.querySelectorAll('.about-img img, .contact-container');
+    // Select all elements to animate
+    const animateElements = document.querySelectorAll('h1, p, .about-img img, .contact-container');
     
+    // Apply observer to each selected element
     animateElements.forEach((el) => {
         observer.observe(el);
     });
