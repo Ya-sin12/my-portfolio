@@ -90,6 +90,22 @@
             <a href="#"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-animation');
+            } else {
+                entry.target.classList.remove('show-animation');
+            }
+        });
+    }, { threshold: 0.1 });
 
+    const animateElements = document.querySelectorAll('.about-img img, .contact-container');
+    
+    animateElements.forEach((el) => {
+        observer.observe(el);
+    });
+</script>
 </body>
 </html>
