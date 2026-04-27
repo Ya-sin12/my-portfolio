@@ -282,3 +282,17 @@ p {
     animation: slideInLeft 1.5s ease-out forwards;
     display: block;
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-container {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
