@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasin | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -110,6 +110,14 @@
     // Apply observer to each selected element
     animateElements.forEach((el) => {
         observer.observe(el);
+    });
+</script>
+    <script>
+    const menu = document.querySelector('#mobile-menu');
+    const nav = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', () => {
+        nav.classList.toggle('active');
     });
 </script>
 </body>
