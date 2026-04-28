@@ -28,7 +28,6 @@ header {
     align-items: center;
     width: 90%;
     margin: auto;
-    position: relative;
 }
 }
 
@@ -269,36 +268,3 @@ h1, p {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-/* Hide menu button on desktop */
-.menu-toggle {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-@media (max-width: 768px) {
-    .menu-toggle { 
-        display: block !important; /* Show menu button on mobile */
-    } 
-    
-    .nav-links {
-        display: none; /* Hide menu by default */
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #333;
-        padding: 20px 0;
-        z-index: 1000; /* Ensures menu stays on top */
-    }
-
-    .nav-links.active { 
-        display: flex !important; /* Show menu when toggle button is clicked */
-    } 
-}
-
-    
-
-   
-
