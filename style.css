@@ -294,7 +294,7 @@ h1, p {
     }
 
     .nav-links.active { 
-        display: flex; /* Show menu when toggle button is clicked */
+        display: flex !important; /* Show menu when toggle button is clicked */
     } 
 }
 
