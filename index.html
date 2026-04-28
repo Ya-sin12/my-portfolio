@@ -112,13 +112,11 @@
         observer.observe(el);
     });
 </script>
-    <script>
-    const menu = document.querySelector('#mobile-menu');
-    const nav = document.querySelector('.nav-links');
+   const menu = document.querySelector('#mobile-menu');
+const nav = document.querySelector('.nav-links');
 
-    menu.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
+menu.onclick = () => {
+    nav.classList.toggle('active');
+};
 </body>
 </html>
