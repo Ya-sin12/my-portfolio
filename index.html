@@ -117,5 +117,20 @@
         observer.observe(el);
     });
 </script>
+    <script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', function() {
+        menuLinks.style.display = (menuLinks.style.display === 'flex') ? 'none' : 'flex';
+        // মোবাইলে মেনু স্টাইল ঠিক করার জন্য
+        menuLinks.style.flexDirection = 'column';
+        menuLinks.style.position = 'absolute';
+        menuLinks.style.top = '70px';
+        menuLinks.style.left = '0';
+        menuLinks.style.width = '100%';
+        menuLinks.style.background = '#0a192f';
+    });
+</script>
 </body>
 </html>
