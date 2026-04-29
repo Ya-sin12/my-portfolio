@@ -199,8 +199,9 @@ footer {
 /* Responsive for Mobile */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column;
-        text-align: center;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
     }
     .about-text {
         text-align: center;
