@@ -268,3 +268,21 @@ h1, p {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+/* মোবাইল মেনু দেখানোর জন্য শর্ট কোড */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex !important; /* লুকানো মেনু দেখাবে */
+        flex-direction: column;   /* উপর নিচ করে সাজাবে */
+        background: #0a192f;      /* হেডারের সাথে মিল রেখে রঙ */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
