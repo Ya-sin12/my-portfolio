@@ -294,3 +294,19 @@ h1, p {
         display: none; /* মোবাইল ওপেন করার আগ পর্যন্ত মেনু লুকানো থাকবে */
     }
 }
+@media (max-width: 768px) {
+    /* Skills, Education ebong What I Offer section-gulo ke mobile-e thik korar jonno */
+    .more-info div[style*="display: flex"], 
+    section[style*="display: flex"] {
+        display: flex !important;
+        flex-direction: column !important; /* Pasapasi thaka jinish-gulo niche niche chole asbe */
+        gap: 20px !important;
+    }
+
+    /* Protekti box jeno mobile screen-er puro width ney */
+    .more-info div[style*="flex: 1"],
+    section div[style*="flex: 1"] {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+}
